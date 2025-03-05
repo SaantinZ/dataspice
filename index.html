@@ -1,0 +1,245 @@
+<html>
+  <head>
+    <title>Wildfires Around the World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/ld+json">
+      {
+  "@context": "http://schema.org",
+  "type": "Dataset",
+  "name": "Wildfires Around the World",
+  "creator": [
+    {
+      "type": "Person",
+      "id": "1",
+      "email": "Work With Data",
+      "affiliation": "Work With Data",
+      "name": "Work With Data"
+    }
+  ],
+  "description": "Dataset containing data on currently happening wildfires. The data includes coordinates, country, total area, brightness, and other metrics. The data comes from the open database of NASA. (2025-03-05)",
+  "datePublished": "2025-03-05",
+  "keywords": ["Wildfires"],  // Fixed to an array
+  "funder": "NASA",
+  "temporalCoverage": "2025-01-01/2025-03-05",
+  "license": "CC0 1.0",
+  "spatialCoverage": {
+    "type": "Place",
+    "name": "Global",
+    "geo": {
+      "type": "GeoShape",
+      "box": "90 180 -90.0 -180.0"  // Fixed the minus sign
+    }
+  },
+  "variableMeasured": [
+    {
+      "type": "PropertyValue",
+      "unitText": "Degrees",
+      "name": "coordinates",
+      "description": "Latitude and longitude of the wildfire location"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "N/A",
+      "name": "country",
+      "description": "Country where the wildfire is occurring"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "Hectares",
+      "name": "total_area",
+      "description": "Total area burned by the wildfire"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "N/A",
+      "name": "brightness",
+      "description": "Brightness value of the fire"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "Date (YYYY-MM-DD)",
+      "name": "date",
+      "description": "Date of the observation"
+    }
+  ],
+  "distribution": [
+    {
+      "type": "DataDownload",
+      "name": "Wildfires Around the World",
+      "contentUrl": "https://doi.org/10.7910/DVN/SZZBW3",
+      "encodingFormat": "CSV"
+    }
+  ]
+}
+
+    </script>
+    <style>
+      body {
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        margin: 0 auto;
+        padding: 1rem;
+        max-width: 800px;
+      }
+
+      #map {
+        height: 20rem;
+      }
+
+      #attributes-wrapper,
+      #jsonld-wrapper {
+        height: 20rem;
+        overflow-y: scroll;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      th {
+        border-bottom: 1px solid black;
+      }
+
+      th, td {
+        padding: 0.25rem;
+      }
+
+      table.listing td {
+        border: 1px solid #CCC;
+      }
+
+      table.listing tr td:first-child {
+          background-color: #EEE;
+      }
+
+      table.listing ul {
+        margin: 0 0 0 1.5rem;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Wildfires Around the World</h1>
+    <p><strong>Description:</strong> Dataset containing data on currently happening wildfires. The data includes coordinates, country, total area, brightness, and other metrics. The data comes from the open database of NASA. (2025-03-05)</p>
+
+    <h2>Bibliographic</h2>
+
+    <table class="listing">
+      <tr>
+        <td>Published</td>
+        <td>2025-03-05</td>
+      </tr>
+      <tr>
+        <td>Keywords</td>
+        <td>
+          <ul>
+            <li>Wildfires</li>
+        </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Funder</td>
+        <td>NASA</td>
+      </tr>
+      <tr>
+        <td>License</td>
+        <td>CC0 1.0</td>
+      </tr>
+    </table>
+
+    <h2>Coverage</h2>
+
+    <h3>Temporal</h3>
+
+    <table class="listing">
+      <tr>
+        <td>Begin</td>
+        <td>2025-01-01</td>
+      </tr>
+      <tr>
+        <td>End</td>
+        <td>2025-03-05</td>
+      </tr>
+    </table>
+
+    <h3>Spatial</h3>
+    <pre><code></code></pre>
+    <div id="map"></div>
+
+    <h2>Attributes</h2>
+
+    <div id="attributes-wrapper">
+      <table id="attributes">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>coordinates</code></td>
+            <td>Latitude and longitude of the wildfire location</td>
+            <td>Degrees</td>
+          </tr>
+          <tr>
+            <td><code>country</code></td>
+            <td>Country where the wildfire is occurring</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td><code>total_area</code></td>
+            <td>Total area burned by the wildfire</td>
+            <td>Hectares</td>
+          </tr>
+          <tr>
+            <td><code>brightness</code></td>
+            <td>Brightness value of the fire</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td><code>date</code></td>
+            <td>Date of the observation</td>
+            <td>Date (YYYY-MM-DD)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Distribution</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>File</th>
+          <th>Format</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>Wildfires Around the World</code></td>
+          <td><code>CSV</code></td>
+          <td><a href="https://doi.org/10.7910/DVN/SZZBW3">Download</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+    <script>
+      var mymap = L.map('map').setView([0, 0], 1);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+        maxZoom: 18,
+      }).addTo(mymap);
+
+      var polygon = L.polygon([[ 90, 180], [ -90, 180], [ -90, -180], [ 90, -180]]).addTo(mymap);
+    </script>
+  </body>
+</html>
