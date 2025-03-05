@@ -15,7 +15,7 @@ This repository contains the source code and files for the "Wildfires Around the
 ## Setup
 
 If you wish to modify or contribute to the website:
-- Clone this repository using `git clone https://github.com/yourusername/yourrepository.git`
+
 - Run `dataspice::build_site()` to generate the website.
 
 ## License
